@@ -1,0 +1,132 @@
+/* Stylesheet */
+
+/* Set all box sizing elements to border*/
+html {
+    box-sizing: border;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Set specificity of box sizing inheritance */
+*, *:before, *:after {
+    box-sizing: inherit;
+    font: inherit;
+}
+
+/* Default flex container definition*/
+.flex-container {
+    display: flex;
+}
+
+/* Flex container affecting child div elements */
+.flex-container, div, span{ 
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border: 2px rgb(255, 0, 0) dotted; /* Placeholder border showing all flex container and div borders */ 
+}
+
+/* top header class affects child text */
+.responsive-header-tier1, p, a{
+    height: 35px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;    
+}
+
+/* top left contact us section */
+.contact-us {
+    flex: 1;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
+/* top right sign in section */
+.sign-in {
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+    background-color: rgb(0, 0, 0);
+    padding-right: 10px;
+}
+
+/* 2nd header container */
+.responsive-header-tier2 {
+    background-color: white;
+    height: 100px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* 2nd header logo */
+.responsive-header-tier2-logo {
+    width: 300px;
+    height: auto;
+}
+
+/* Search bar container */
+.search-bar-div {
+    flex: 2 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search bar parameters */
+.search-bar {
+    height: 35px;
+    width: 250px;
+}
+
+.responsive-delivery-selector {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Delivery country section */
+.delivery-country {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Country being delivered to image */
+.country-logo {
+    float: right;
+    height: 30px;
+    width: auto;
+    padding-left: 5px;
+}
+
+/* Responsive header tier 3 class (categories/site nav etc) */
+.responsive-header-tier3 {
+    background-color: #252525;
+    height: 75px;
+}
+
+/* Responsive top menu class */
+.responsive-menu {
+    flex: 1;
+    align-items: center;
+    background-color: #252525;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Menu button */
+.menu-nav-link {
+    flex: 1;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+}
+
+/* Button content */
+.menu-nav-content {
+    flex: 1;
+    justify-content: center;
+    background-color: #252525;
+}
