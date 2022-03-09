@@ -130,6 +130,7 @@ html {
 
 .front-article-container {
     flex: 1;
+    flex-flow: column;
     height: 700px;
     padding-left: 15%;
     padding-right: 15%;
@@ -146,7 +147,18 @@ html {
     justify-content: center;
 }
 
-.front-article-img {
-    max-width: 100%;
-    max-height: 100vh;
+.front-article-description {
+    flex: 1;
+    height: 50px;
+    background-color: #252525;
+}
+
+.front-article-description-container {
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #252525;
+}
+
+.front-article-description-border {
+    background-color: rgb(14, 14, 14);
 }
